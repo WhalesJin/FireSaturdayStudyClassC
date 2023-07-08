@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Untitled Page 2'/>
+        <page name='Untitled Page 3'/>
+        <page name='Untitled Page 4'/>
+        <page name='Week7_Closure'/>
+        <page name='json'/>
+        <page name='상속'/>
+        <page name='LoclizedDescription'/>
+        <page name='GCD-main_async'/>
+        <page name='GCD-global_async'/>
+        <page name='GCD-global_sync'/>
+        <page name='GCD-main_sync'/>
+        <page name='GCD-DispatchWorkItem'/>
+        <page name='GCD심화'/>
+        <page name='GCD심화-Race Condition부터'/>
+        <page name='Operation'/>
+        <page name='Operation 기본'/>
+        <page name='Operation 심화'/>
+        <page name='Operation 스스로해보기'/>
+    </pages>
+</playground>
