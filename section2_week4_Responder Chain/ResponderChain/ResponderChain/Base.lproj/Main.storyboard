@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ResponderChain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="mainView" id="8bC-Xf-vdC" customClass="MainView" customModule="ResponderChain" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIx-uF-xDa" userLabel="Green View" customClass="GreenView" customModule="ResponderChain" customModuleProvider="target">
+                                <rect key="frame" x="40" y="99" width="313" height="369"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVQ-tr-Ks5" userLabel="Orange View" customClass="OrangeView" customModule="ResponderChain" customModuleProvider="target">
+                                        <rect key="frame" x="47.666666666666686" y="68" width="218" height="115"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="115" id="MFh-0O-j9A"/>
+                                            <constraint firstAttribute="width" constant="218" id="PaU-kE-242"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-W9-KAx" userLabel="Purple View" customClass="PurpleView" customModule="ResponderChain" customModuleProvider="target">
+                                        <rect key="frame" x="47.666666666666686" y="303" width="218" height="115"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="115" id="5cP-Te-v31"/>
+                                            <constraint firstAttribute="width" constant="218" id="sif-Eg-jQI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EVQ-tr-Ks5" firstAttribute="top" secondItem="qIx-uF-xDa" secondAttribute="topMargin" constant="60" id="IXC-jx-INw"/>
+                                    <constraint firstItem="dcl-W9-KAx" firstAttribute="centerX" secondItem="qIx-uF-xDa" secondAttribute="centerX" id="PhB-OQ-Hy6"/>
+                                    <constraint firstItem="EVQ-tr-Ks5" firstAttribute="centerX" secondItem="qIx-uF-xDa" secondAttribute="centerX" id="lmY-i4-Gme"/>
+                                    <constraint firstItem="dcl-W9-KAx" firstAttribute="top" secondItem="EVQ-tr-Ks5" secondAttribute="bottom" constant="120" id="y5e-Ys-j4g"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0md-PY-DaH" userLabel="Blue View" customClass="BlueView" customModule="ResponderChain" customModuleProvider="target">
+                                <rect key="frame" x="87.666666666666686" y="648" width="218" height="115"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqS-RN-Try" customClass="YellowButton" customModule="ResponderChain" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="-55" width="160" height="102"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="bSg-E8-FEc"/>
+                                            <constraint firstAttribute="height" constant="102" id="dry-4t-hD9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="GvH-pW-oyL"/>
+                                    <constraint firstAttribute="width" constant="218" id="nhq-TT-bHh"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="VqS-RN-Try" secondAttribute="bottom" constant="60" id="rN0-qv-DRH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="VqS-RN-Try" firstAttribute="centerX" secondItem="qIx-uF-xDa" secondAttribute="centerX" id="7FL-8u-Bed"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qIx-uF-xDa" secondAttribute="trailing" constant="40" id="G7c-0E-dg3"/>
+                            <constraint firstItem="qIx-uF-xDa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Pkp-qQ-mE0"/>
+                            <constraint firstItem="0md-PY-DaH" firstAttribute="centerX" secondItem="qIx-uF-xDa" secondAttribute="centerX" id="URc-Xi-1Sb"/>
+                            <constraint firstItem="0md-PY-DaH" firstAttribute="top" secondItem="qIx-uF-xDa" secondAttribute="bottom" constant="180" id="Uwh-6M-s5X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qIx-uF-xDa" secondAttribute="bottom" constant="350" id="jBJ-mJ-g9c"/>
+                            <constraint firstItem="0md-PY-DaH" firstAttribute="centerX" secondItem="qIx-uF-xDa" secondAttribute="centerX" id="q3F-z6-Ueb"/>
+                            <constraint firstItem="qIx-uF-xDa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="xl2-Qg-kYd"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="OFV-CW-JSg" appends="YES" id="EW0-SZ-zEu"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="greenView" destination="qIx-uF-xDa" id="NuD-GR-jo3"/>
+                        <outlet property="orangeView" destination="EVQ-tr-Ks5" id="Wwd-vo-7Le"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OFV-CW-JSg"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
