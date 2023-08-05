@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="__week6_cache" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AOY-Cu-GXj">
+                                <rect key="frame" x="20" y="69" width="353" height="739"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="UFy-Ln-Fa8">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="258.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K2v-FJ-t19">
+                                                <rect key="frame" x="70.666666666666671" y="0.0" width="211.66666666666663" height="193.66666666666666"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZU-hP-Hhd">
+                                                <rect key="frame" x="53" y="208.66666666666669" width="247" height="50"/>
+                                                <color key="backgroundColor" red="0.71901148560000006" green="0.71951729060000003" blue="0.60495442150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="zhi-45-MNe"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="첫 번째 이미지 받아오기">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="touchUpFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IgZ-d1-7SK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="XZU-hP-Hhd" firstAttribute="width" secondItem="UFy-Ln-Fa8" secondAttribute="width" multiplier="0.7" id="1Sf-Yc-dUb"/>
+                                            <constraint firstItem="K2v-FJ-t19" firstAttribute="width" secondItem="UFy-Ln-Fa8" secondAttribute="width" multiplier="0.6" id="2kM-Lh-3av"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YpQ-GP-0al">
+                                        <rect key="frame" x="0.0" y="288.66666666666663" width="353" height="258.66666666666663"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JXD-i7-C6X">
+                                                <rect key="frame" x="70.666666666666671" y="0.0" width="211.66666666666663" height="193.66666666666666"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43N-cR-O7G">
+                                                <rect key="frame" x="53" y="208.66666666666669" width="247" height="50"/>
+                                                <color key="backgroundColor" red="0.74582046270000002" green="0.55341285470000001" blue="0.52350044250000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Mg7-cR-4LF"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="두 번째 이미지 받아오기">
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="touchUpSecondButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gh3-7z-cgD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="JXD-i7-C6X" firstAttribute="width" secondItem="YpQ-GP-0al" secondAttribute="width" multiplier="0.6" id="Y1h-RJ-mNm"/>
+                                            <constraint firstItem="43N-cR-O7G" firstAttribute="width" secondItem="YpQ-GP-0al" secondAttribute="width" multiplier="0.7" id="jKQ-0T-X8p"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qvA-Js-AJk">
+                                        <rect key="frame" x="0.0" y="577.33333333333337" width="353" height="161.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOA-5u-Pys">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="73.333333333333329"/>
+                                                <color key="backgroundColor" red="0.51715940240000002" green="0.66893357040000001" blue="0.64324229960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="이미지 초기화">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="touchUpImageResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mim-FX-ERV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utW-o4-2Mk">
+                                                <rect key="frame" x="0.0" y="88.333333333333258" width="353" height="73.333333333333314"/>
+                                                <color key="backgroundColor" red="0.53343170880000002" green="0.54547423120000005" blue="0.51303148269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="캐시 비우기">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="touchUpEmptyCacheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nqk-em-nXM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qvA-Js-AJk" secondAttribute="trailing" id="00k-0d-dho"/>
+                                    <constraint firstAttribute="trailing" secondItem="YpQ-GP-0al" secondAttribute="trailing" id="DTv-Kd-UAm"/>
+                                    <constraint firstItem="qvA-Js-AJk" firstAttribute="leading" secondItem="AOY-Cu-GXj" secondAttribute="leading" id="I8K-xs-S1R"/>
+                                    <constraint firstAttribute="trailing" secondItem="UFy-Ln-Fa8" secondAttribute="trailing" id="Ke0-oV-MwW"/>
+                                    <constraint firstItem="UFy-Ln-Fa8" firstAttribute="top" secondItem="AOY-Cu-GXj" secondAttribute="top" id="ZQb-8g-Dgp"/>
+                                    <constraint firstItem="YpQ-GP-0al" firstAttribute="leading" secondItem="AOY-Cu-GXj" secondAttribute="leading" id="lnZ-tm-Z1E"/>
+                                    <constraint firstItem="YpQ-GP-0al" firstAttribute="height" secondItem="AOY-Cu-GXj" secondAttribute="height" multiplier="0.35" id="osH-J8-EEF"/>
+                                    <constraint firstItem="UFy-Ln-Fa8" firstAttribute="height" secondItem="AOY-Cu-GXj" secondAttribute="height" multiplier="0.35" id="qxs-5O-QMP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AOY-Cu-GXj" secondAttribute="trailing" constant="20" id="6Xv-Az-vr1"/>
+                            <constraint firstItem="AOY-Cu-GXj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7kf-gd-TVB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AOY-Cu-GXj" secondAttribute="bottom" constant="10" id="eEU-UA-5eN"/>
+                            <constraint firstItem="AOY-Cu-GXj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="mhA-6F-xgf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstImageView" destination="K2v-FJ-t19" id="iZC-C4-O8K"/>
+                        <outlet property="secondImageView" destination="JXD-i7-C6X" id="Yby-C7-QCL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45.038167938931295" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
