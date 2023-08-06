@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSCache" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hra-oZ-fud">
+                                <rect key="frame" x="96.666666666666686" y="59" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4HW-aJ-IJ4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="CkN-Tv-Pg1"/>
+                                    <constraint firstAttribute="height" constant="200" id="XyB-mX-iKH"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="bS8-aM-q34"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKt-uk-8T6">
+                                <rect key="frame" x="86.666666666666686" y="277" width="220" height="50"/>
+                                <color key="backgroundColor" red="0.71757525209999995" green="0.7175710797" blue="0.60325473549999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="ByB-eL-f3h"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="KKJ-KO-PU1"/>
+                                    <constraint firstAttribute="height" constant="50" id="SHc-R8-lmM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="xdo-24-oJO"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="첫 번째 이미지 받아오기"/>
+                                <connections>
+                                    <action selector="tappedFirstImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OJ0-M5-ak7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0F7-yr-HcW">
+                                <rect key="frame" x="96.666666666666686" y="356" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="5HL-en-hhE"/>
+                                    <constraint firstAttribute="width" constant="200" id="f5S-gU-fNE"/>
+                                    <constraint firstAttribute="height" constant="200" id="oZM-be-gA1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="zZP-kX-pK8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jC-vx-Myn">
+                                <rect key="frame" x="104.33333333333333" y="575" width="184.33333333333337" height="50"/>
+                                <color key="backgroundColor" red="0.77620822190000005" green="0.57627010349999996" blue="0.54466915130000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NfU-Gr-zN4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="xuA-78-pDm"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="두 번째 이미지 받아오기"/>
+                                <connections>
+                                    <action selector="tappedFirstImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="78l-FY-vGr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxC-br-3q5">
+                                <rect key="frame" x="46.666666666666657" y="737" width="300" height="65"/>
+                                <color key="backgroundColor" red="0.62352257970000002" green="0.6352772713" blue="0.59982120989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="1xt-ce-AKK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="LRt-nE-Hdb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Qcj-z3-Ow3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="wad-fR-2EK"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="캐시 비우기"/>
+                                <connections>
+                                    <action selector="tappedEmptyCacheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1sP-Cd-I5A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raA-6U-56M">
+                                <rect key="frame" x="46.666666666666657" y="664" width="300" height="65"/>
+                                <color key="backgroundColor" red="0.53750544789999999" green="0.69419509170000004" blue="0.66665858030000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="2xZ-nn-OFv"/>
+                                    <constraint firstAttribute="height" constant="65" id="Dq8-uu-3wc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Z8M-fg-CI7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="u3M-hj-ElG"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="이미지 초기화"/>
+                                <connections>
+                                    <action selector="tappedResetImageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkj-k1-XkU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FxC-br-3q5" firstAttribute="top" secondItem="raA-6U-56M" secondAttribute="bottom" constant="8" id="0FQ-eq-fX2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FxC-br-3q5" secondAttribute="bottom" constant="16" id="1cg-zL-coD"/>
+                            <constraint firstItem="FxC-br-3q5" firstAttribute="centerX" secondItem="hra-oZ-fud" secondAttribute="centerX" id="3uG-f6-qR9"/>
+                            <constraint firstItem="aKt-uk-8T6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="459-Gm-deC"/>
+                            <constraint firstItem="9jC-vx-Myn" firstAttribute="top" secondItem="0F7-yr-HcW" secondAttribute="bottom" constant="19" id="4dE-CJ-uZ8"/>
+                            <constraint firstItem="9jC-vx-Myn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9kY-Pi-zMt"/>
+                            <constraint firstItem="raA-6U-56M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CDa-mH-Fjj"/>
+                            <constraint firstItem="aKt-uk-8T6" firstAttribute="centerX" secondItem="hra-oZ-fud" secondAttribute="centerX" id="FTw-X5-i8q"/>
+                            <constraint firstItem="hra-oZ-fud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="egr-hI-hBd"/>
+                            <constraint firstItem="9jC-vx-Myn" firstAttribute="centerX" secondItem="hra-oZ-fud" secondAttribute="centerX" id="g1o-gL-7gm"/>
+                            <constraint firstItem="0F7-yr-HcW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h5e-KW-ZV0"/>
+                            <constraint firstItem="0F7-yr-HcW" firstAttribute="top" secondItem="aKt-uk-8T6" secondAttribute="bottom" constant="29" id="kcg-gZ-4st"/>
+                            <constraint firstItem="aKt-uk-8T6" firstAttribute="top" secondItem="hra-oZ-fud" secondAttribute="bottom" constant="18" id="loL-8b-Wxo"/>
+                            <constraint firstItem="raA-6U-56M" firstAttribute="top" secondItem="9jC-vx-Myn" secondAttribute="bottom" constant="39" id="nhR-5m-xiJ"/>
+                            <constraint firstItem="raA-6U-56M" firstAttribute="centerX" secondItem="hra-oZ-fud" secondAttribute="centerX" id="owc-Bf-NXZ"/>
+                            <constraint firstItem="FxC-br-3q5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sCv-yF-uaz"/>
+                            <constraint firstItem="0F7-yr-HcW" firstAttribute="centerX" secondItem="hra-oZ-fud" secondAttribute="centerX" id="zAi-3E-2ag"/>
+                            <constraint firstItem="hra-oZ-fud" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zzQ-Gk-Pn4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emptyCacheButton" destination="FxC-br-3q5" id="Cno-X0-qSP"/>
+                        <outlet property="firstImageButton" destination="aKt-uk-8T6" id="AUa-zN-xdE"/>
+                        <outlet property="firstImageView" destination="hra-oZ-fud" id="BA9-JQ-7lE"/>
+                        <outlet property="resetImageButton" destination="raA-6U-56M" id="Fcx-LY-pu1"/>
+                        <outlet property="secondImageButton" destination="9jC-vx-Myn" id="6iO-bC-6Ex"/>
+                        <outlet property="secondImageView" destination="0F7-yr-HcW" id="PaS-07-K2N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.244274809160306" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
