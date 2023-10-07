@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bSS-j6-S0j">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MVCViewController" customModule="MVC_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심리 테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfv-Kp-6qf">
+                                <rect key="frame" x="119" y="105" width="155" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="무인도를 갈 때 하나만 들고가야한다면?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqq-7w-apw">
+                                <rect key="frame" x="66" y="184" width="261" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="그렇다면 당신은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEk-JL-HdZ">
+                                <rect key="frame" x="142" y="543" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="버튼을 눌러보세요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ix2-Wk-omy">
+                                <rect key="frame" x="0.0" y="621" width="393" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJb-NG-A8k">
+                                <rect key="frame" x="46" y="299" width="140" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="책"/>
+                                <connections>
+                                    <action selector="didTappedBookButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kW1-gv-ZKh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO2-42-5LF">
+                                <rect key="frame" x="207" y="299" width="140" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="고기"/>
+                                <connections>
+                                    <action selector="didTappedMeatButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R9K-Za-hDa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eEk-JL-HdZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="2YZ-4c-KiD"/>
+                            <constraint firstItem="eEk-JL-HdZ" firstAttribute="centerX" secondItem="ix2-Wk-omy" secondAttribute="centerX" id="IHW-ba-npn"/>
+                            <constraint firstItem="ix2-Wk-omy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ixy-WF-mpb"/>
+                            <constraint firstItem="eEk-JL-HdZ" firstAttribute="centerX" secondItem="Rfv-Kp-6qf" secondAttribute="centerX" id="Vph-ds-YXq"/>
+                            <constraint firstItem="Fqq-7w-apw" firstAttribute="top" secondItem="Rfv-Kp-6qf" secondAttribute="bottom" constant="38" id="Zve-vR-Y0Y"/>
+                            <constraint firstItem="eEk-JL-HdZ" firstAttribute="centerX" secondItem="Fqq-7w-apw" secondAttribute="centerX" id="cFD-yH-Gkf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ix2-Wk-omy" secondAttribute="trailing" id="eYf-dG-Qdb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ix2-Wk-omy" secondAttribute="bottom" constant="170" id="hQu-Qm-Ifq"/>
+                            <constraint firstItem="Fqq-7w-apw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="184" id="jxh-wA-fgK"/>
+                            <constraint firstItem="ix2-Wk-omy" firstAttribute="top" secondItem="eEk-JL-HdZ" secondAttribute="bottom" constant="57" id="vdw-9z-uMO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookButton" destination="oJb-NG-A8k" id="2iR-f9-KWN"/>
+                        <outlet property="meatButton" destination="nO2-42-5LF" id="AAz-JH-gtG"/>
+                        <outlet property="resultLabel" destination="ix2-Wk-omy" id="XWa-Hf-KSN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="-8"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KXM-gg-k3B">
+            <objects>
+                <viewController id="bSS-j6-S0j" customClass="MVVMViewController" customModule="MVC_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VWZ-K8-F0l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심리 테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hku-7q-pnh">
+                                <rect key="frame" x="119" y="105" width="155" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="무인도를 갈 때 하나만 들고가야한다면?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6U-Nm-77y">
+                                <rect key="frame" x="66" y="184" width="261" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="그렇다면 당신은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6l3-BO-o20">
+                                <rect key="frame" x="142" y="543" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="버튼을 눌러보세요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpl-H4-Nm5">
+                                <rect key="frame" x="0.0" y="621" width="393" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYc-BL-xms">
+                                <rect key="frame" x="46" y="299" width="140" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="책"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIK-g9-CbI">
+                                <rect key="frame" x="207" y="299" width="140" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="고기"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Plj-nm-bDg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6l3-BO-o20" firstAttribute="centerX" secondItem="e6U-Nm-77y" secondAttribute="centerX" id="3Ab-99-t0b"/>
+                            <constraint firstItem="e6U-Nm-77y" firstAttribute="top" secondItem="hku-7q-pnh" secondAttribute="bottom" constant="38" id="4wa-wR-Ub9"/>
+                            <constraint firstItem="vpl-H4-Nm5" firstAttribute="top" secondItem="6l3-BO-o20" secondAttribute="bottom" constant="57" id="EJl-qO-BIM"/>
+                            <constraint firstItem="6l3-BO-o20" firstAttribute="centerX" secondItem="hku-7q-pnh" secondAttribute="centerX" id="Jcl-4h-euh"/>
+                            <constraint firstItem="Plj-nm-bDg" firstAttribute="bottom" secondItem="vpl-H4-Nm5" secondAttribute="bottom" constant="170" id="PWu-bn-J2R"/>
+                            <constraint firstItem="6l3-BO-o20" firstAttribute="centerX" secondItem="vpl-H4-Nm5" secondAttribute="centerX" id="Psx-cW-qOC"/>
+                            <constraint firstItem="vpl-H4-Nm5" firstAttribute="leading" secondItem="Plj-nm-bDg" secondAttribute="leading" id="RM3-Y9-8Lc"/>
+                            <constraint firstItem="Plj-nm-bDg" firstAttribute="trailing" secondItem="vpl-H4-Nm5" secondAttribute="trailing" id="dOY-BU-zKZ"/>
+                            <constraint firstItem="e6U-Nm-77y" firstAttribute="top" secondItem="VWZ-K8-F0l" secondAttribute="top" constant="184" id="m35-cU-DrV"/>
+                            <constraint firstItem="6l3-BO-o20" firstAttribute="leading" secondItem="Plj-nm-bDg" secondAttribute="leading" constant="142" id="sEX-Up-r9r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookButton" destination="BYc-BL-xms" id="L72-C9-ePy"/>
+                        <outlet property="meatButton" destination="DIK-g9-CbI" id="vq5-OL-Q4q"/>
+                        <outlet property="resultLabel" destination="vpl-H4-Nm5" id="AeI-XP-AfT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sD-4X-rE7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="-8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
